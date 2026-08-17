@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <title>Ready at Home social profile mark</title>
+  <rect width="1080" height="1080" fill="#18323B"/>
+
+  <!-- Central mark is scaled to remain safely inside circular platform crops. -->
+  <g transform="translate(81 81) scale(0.85)">
+  <!-- House outline: deliberately bold for legibility at small avatar sizes. -->
+  <path d="M202 472 L540 190 L878 472"
+        fill="none" stroke="#F5F1E8" stroke-width="72"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M260 455 V842 H398"
+        fill="none" stroke="#F5F1E8" stroke-width="72"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M820 455 V842 H682"
+        fill="none" stroke="#F5F1E8" stroke-width="72"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Shield -->
+  <path d="M540 398
+           L695 454
+           V617
+           C695 735 628 814 540 870
+           C452 814 385 735 385 617
+           V454 Z"
+        fill="#426B5A"/>
+
+  <!-- Check -->
+  <path d="M457 622 L520 686 L643 548"
+        fill="none" stroke="#F5F1E8" stroke-width="58"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
