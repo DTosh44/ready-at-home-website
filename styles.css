@@ -77,6 +77,48 @@ nav a:hover { color: var(--amber); }
 .workbook-card span { display: block; padding: 8px 4px 2px; font-size: .68rem; font-weight: 700; text-align: center; text-transform: uppercase; }
 .hand-note { position: absolute; z-index: 3; right: -20px; bottom: 34px; width: 170px; color: var(--navy); font-size: 1.05rem; font-style: italic; font-weight: 700; transform: rotate(-6deg); }
 
+/* Current guide + workbook product artwork */
+.bundle-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(24, 50, 59, .12);
+  background: var(--cream);
+  box-shadow: var(--shadow);
+}
+.bundle-pair {
+  position: relative;
+  z-index: 2;
+  width: min(520px, 96%);
+  height: 500px;
+}
+.bundle-pair .bundle-image {
+  position: absolute;
+  width: 68%;
+  max-width: 360px;
+}
+.bundle-image--uk {
+  top: 0;
+  left: 0;
+  transform: rotate(-3deg);
+}
+.bundle-image--us {
+  right: 0;
+  bottom: 0;
+  transform: rotate(3deg);
+}
+.single-bundle-art {
+  position: relative;
+  z-index: 2;
+  width: min(490px, 92%);
+  transform: rotate(1.5deg);
+}
+.hero-visual--dual .sun-disc,
+.hero-visual--single .sun-disc {
+  width: 460px;
+  height: 460px;
+}
+
 .problem { background: var(--paper); }
 .problem-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .problem-grid article { padding: 32px; border-right: 1px solid var(--line); }
@@ -184,6 +226,11 @@ footer { padding: 50px 0; color: var(--cream); background: #0a1d23; }
   .sun-disc { width: 320px; height: 320px; }
   .product-stack { width: 265px; }
   .workbook-card { left: -15%; }
+  .bundle-pair { width: min(340px, 96%); height: 385px; }
+  .bundle-pair .bundle-image { width: 72%; }
+  .single-bundle-art { width: min(330px, 92%); }
+  .hero-visual--dual .sun-disc,
+  .hero-visual--single .sun-disc { width: 320px; height: 320px; }
   .hand-note { right: 4px; bottom: 8px; }
   .problem-grid, .inside-grid, .tick-list { grid-template-columns: 1fr; }
   .problem-grid article { border-right: 0; border-bottom: 1px solid var(--line); }

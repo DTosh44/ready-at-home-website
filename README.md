@@ -5,8 +5,8 @@ Static multi-region sales site for `getreadyathome.com`.
 ## Page structure
 
 - `/` — brand homepage and UK/US edition selector
-- `/uk/` — complete UK Edition sales page with live £14.99 Payhip checkout
-- `/us/` — US Edition preview page; checkout intentionally held back until the product is finished
+- `/uk/` — UK Edition sales page with live £14.99 Payhip checkout
+- `/us/` — US Edition sales page advertising $19.99 with a live Payhip checkout
 
 Each regional product is one paid bundle containing two separate PDFs: the main guide and its printable household-planning workbook.
 
@@ -14,21 +14,17 @@ Each regional product is one paid bundle containing two separate PDFs: the main 
 
 - Live GitHub Pages preview: https://dtosh44.github.io/ready-at-home-website/
 - Changes pushed to the `main` branch are published automatically by GitHub Pages.
-- The homepage promotes both regional editions.
-- The UK checkout uses the confirmed Payhip product link.
-- The US page is ready for its final cover, price and Payhip link.
-- Customer contact is set to `hello@getreadyathome.com`.
+- The homepage promotes both regional editions and provides direct purchase links.
+- UK Payhip product key: `gGZ7k`
+- US Payhip product key: `0wjXV`
+- Customer contact: `hello@getreadyathome.com`
+- Reciprocal UK, US and default `hreflang` references are present.
+- Current combined guide-and-workbook artwork is stored in `assets/ready-at-home-uk-guide-workbook.png` and `assets/ready-at-home-us-guide-workbook.png`.
 - The unfinished free-readiness form remains hidden. Its artwork and styling are retained for later use.
 
-## US Edition launch checklist
+## US currency note
 
-1. Finish and quality-check the US guide.
-2. Finish the separate US Letter workbook.
-3. Export and upload both PDFs to one US Payhip product.
-4. Confirm the USD price and direct checkout link.
-5. Replace the placeholder cover and coming-soon checkout on `/us/`.
-6. Add reciprocal `hreflang` references to the UK and US pages.
-7. Run a customer-style test order and confirm payment, receipt and delivery of the correct files.
+The website presents the US bundle as **$19.99**. The current Payhip store remains GBP-only, so its US product should be maintained at the GBP equivalent—initially **£14.82**. If the exchange rate changes materially, update the Payhip GBP price while keeping the website’s customer-facing price at $19.99.
 
 ## Custom-domain launch checklist
 
@@ -42,6 +38,7 @@ Each regional product is one paid bundle containing two separate PDFs: the main 
    - `CNAME` record for `www` → `DTosh44.github.io`
 4. After GitHub's DNS check passes, enable **Enforce HTTPS** in the Pages settings.
 5. Forward `getreadyathome.co.uk` to `https://getreadyathome.com/uk/`.
+6. Run separate customer-style test orders for the UK and US products and confirm payment, receipt and delivery of the correct files.
 
 ## Working on the site
 
