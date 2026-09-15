@@ -7,12 +7,13 @@ Static sales page for `getreadyathome.com`.
 - Live GitHub Pages preview: https://dtosh44.github.io/ready-at-home-website/
 - Changes pushed to the `main` branch are published automatically by GitHub Pages.
 - The UK guide button opens the confirmed £14.99 Payhip checkout.
+- Customer contact is set to `hello@getreadyathome.com`.
 - The unfinished free-readiness form is hidden. Its artwork and styling remain in the repository for later use.
 - The US edition remains marked as coming soon.
 
 ## Before launching on the custom domain
 
-1. Add the Ready at Home support email and publish Privacy, Terms, Refund and Disclaimer pages.
+1. Confirm `hello@getreadyathome.com` can receive messages, then publish Privacy, Terms, Refund and Disclaimer pages.
 2. In GitHub, open **Settings → Pages**, enter `getreadyathome.com` under **Custom domain**, then save.
 3. In GoDaddy DNS, replace the parking records with these GitHub Pages records:
    - `A` record for `@` → `185.199.108.153`
