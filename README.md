@@ -1,17 +1,36 @@
-# Ready at Home landing page
+# Ready at Home website
 
-Static sales page for `getreadyathome.com`.
+Static multi-region sales site for `getreadyathome.com`.
+
+## Page structure
+
+- `/` — brand homepage and UK/US edition selector
+- `/uk/` — complete UK Edition sales page with live £14.99 Payhip checkout
+- `/us/` — US Edition preview page; checkout intentionally held back until the product is finished
+
+Each regional product is one paid bundle containing two separate PDFs: the main guide and its printable household-planning workbook.
 
 ## Current status
 
 - Live GitHub Pages preview: https://dtosh44.github.io/ready-at-home-website/
 - Changes pushed to the `main` branch are published automatically by GitHub Pages.
-- The UK guide button opens the confirmed £14.99 Payhip checkout.
+- The homepage promotes both regional editions.
+- The UK checkout uses the confirmed Payhip product link.
+- The US page is ready for its final cover, price and Payhip link.
 - Customer contact is set to `hello@getreadyathome.com`.
-- The unfinished free-readiness form is hidden. Its artwork and styling remain in the repository for later use.
-- The US edition remains marked as coming soon.
+- The unfinished free-readiness form remains hidden. Its artwork and styling are retained for later use.
 
-## Before launching on the custom domain
+## US Edition launch checklist
+
+1. Finish and quality-check the US guide.
+2. Finish the separate US Letter workbook.
+3. Export and upload both PDFs to one US Payhip product.
+4. Confirm the USD price and direct checkout link.
+5. Replace the placeholder cover and coming-soon checkout on `/us/`.
+6. Add reciprocal `hreflang` references to the UK and US pages.
+7. Run a customer-style test order and confirm payment, receipt and delivery of the correct files.
+
+## Custom-domain launch checklist
 
 1. Confirm `hello@getreadyathome.com` can receive messages, then publish Privacy, Terms, Refund and Disclaimer pages.
 2. In GitHub, open **Settings → Pages**, enter `getreadyathome.com` under **Custom domain**, then save.
@@ -22,9 +41,7 @@ Static sales page for `getreadyathome.com`.
    - `A` record for `@` → `185.199.111.153`
    - `CNAME` record for `www` → `DTosh44.github.io`
 4. After GitHub's DNS check passes, enable **Enforce HTTPS** in the Pages settings.
-5. Run a customer-style test order and confirm checkout, payment, confirmation email and PDF delivery.
-6. Forward `getreadyathome.co.uk` to `https://getreadyathome.com/`.
-7. Add the finished US product only after it has been quality checked.
+5. Forward `getreadyathome.co.uk` to `https://getreadyathome.com/uk/`.
 
 ## Working on the site
 
