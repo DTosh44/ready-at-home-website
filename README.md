@@ -2,6 +2,16 @@
 
 Static multi-region sales site for `getreadyathome.com`.
 
+## Product, brand and longer-term direction
+
+**Product promise:** make it straightforward for households to buy the right regional Ready at Home guide and printable planning workbook. The website is a focused, reassuring sales experience, not a multi-product marketplace or subscription portal. Keep UK/US content, delivery and pricing clearly separated.
+
+**Current design language:** practical, trustworthy and warm, using dark navy `#18323b`, green `#426b5a`, amber `#e09a32` actions and cream/paper `#f5f1e8`/`#fbf8f1` surfaces, with limited coral accents. Oswald supplies bold uppercase headlines; DM Sans supplies accessible body and UI text. Keep a clear hierarchy, strong purchase CTAs, regional clarity, product artwork and simple responsive layouts; avoid clutter and unsupported trust claims. These are the implemented `styles.css` tokens.
+
+**Immediate direction:** complete the `getreadyathome.com` domain/HTTPS launch, validate customer contact/legal information and run real UK and US test purchases to confirm that each customer receives the correct guide-plus-workbook bundle. The free readiness form is intentionally hidden, not a launch promise. Future lead capture, new product lines or subscriptions require a separate decision.
+
+The living milestone and blockers are in [PROJECT.md](PROJECT.md), and [AGENTS.md](AGENTS.md) explains which existing behaviours must be preserved.
+
 ## Page structure
 
 - `/` — brand homepage and UK/US edition selector
